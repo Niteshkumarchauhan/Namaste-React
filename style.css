@@ -1,0 +1,10 @@
+/**
+ * Styles for Namaste React Project
+ * 
+ * Basic styling for the React application elements
+ */
+
+/* Style for heading element with id "heading" */
+#heading {
+  color: red;
+}
