@@ -20,18 +20,27 @@
  * Flow: ReactElement (JavaScript Object) => HTML (Browser Understands)
  */
 
+// Import React and ReactDOM from npm packages (managed by Parcel)
+import React from "react";
+import ReactDOM from "react-dom/client";
+
 // Create a nested React element structure using React.createElement API
 // React.createElement(type, props, ...children)
+// Each child in a list needs a unique "key" prop for React's reconciliation
 const parent = React.createElement("div", { id: "parent" }, [
   // First child div containing two heading elements
-  React.createElement("div", { id: "child" }, [
-    React.createElement("h1", {}, "I'm an h1 tag"),
-    React.createElement("h2", {}, "I'm an h2 tag"),
+  React.createElement("div", { id: "child", key: "child1" }, [
+    React.createElement("h1", { key: "h1-1" }, "This is namaste react"),
+    React.createElement("h2", { key: "h2-1" }, "Created by Nitesh"),
   ]),
   // Second child div containing two heading elements
-  React.createElement("div", { id: "child2" }, [
-    React.createElement("h1", {}, "I'm an h1 tag"),
-    React.createElement("h2", {}, "I'm an h2 tag"),
+  React.createElement("div", { id: "child2", key: "child2" }, [
+    React.createElement("h1", { key: "h1-2" }, "Build skills"),
+    React.createElement(
+      "h2",
+      { key: "h2-2" },
+      "And also build my brain to improve",
+    ),
   ]),
 ]);
 
@@ -39,11 +48,11 @@ const parent = React.createElement("div", { id: "parent" }, [
 console.log(parent); // This will show the React element object structure
 
 // Create another React element with custom props
-const heading = React.createElement(
-  "h1",
-  { id: "heading", xyz: "abc" }, // Props object with id and custom attribute
-  "Hello World from React !",
-);
+// const heading = React.createElement(
+//   "h1",
+//   { id: "heading", xyz: "abc" }, // Props object with id and custom attribute
+//   "Hello World from React !",
+// );
 
 // Get the root DOM element and create a React root
 const root = ReactDOM.createRoot(document.getElementById("root"));

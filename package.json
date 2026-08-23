@@ -1,0 +1,32 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "This is namaste react by Nitesh ",
+  "keywords": [
+    "namaste",
+    "react"
+  ],
+  "homepage": "https://github.com/Niteshkumarchauhan/Namaste-React#readme",
+  "bugs": {
+    "url": "https://github.com/Niteshkumarchauhan/Namaste-React/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Niteshkumarchauhan/Namaste-React.git"
+  },
+  "license": "ISC",
+  "author": "Nitesh Kumar Chauhan",
+  "type": "commonjs",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  }
+}
