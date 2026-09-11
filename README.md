@@ -1,57 +1,85 @@
 # Namaste React 🚀
 
-A learning project exploring React fundamentals without using JSX or build tools.
+#Parcel
+Dev Build
+Local Server
+HMR = Hot Module Replacement
+File Watching Algorithm - written in C++
+Caching - Faster Builds
+Image Optimization
+Minification
+Bundling
+Compress
+Consistent Hashing
+Code Splitting
+Differential Bundling - support older browsers
+Diagnostic
+Error Handling
+HTTPs
+Tree Shaking - remove unused code
+Different dev and prod bundles
 
-## 📚 What This Project Demonstrates
+# Namaste Food
 
-- Creating React elements using `React.createElement()` API
-- Understanding how React converts JavaScript objects into DOM elements
-- Working with nested React components
-- Using React and ReactDOM via CDN (no build setup required)
+Header
+Logo
+Nav Items
+Body
+Search
+RestaurantContainer
+RestaurantCard
 
-## 🗂️ Project Structure
+- Img
+- Name of Res, Star Rating, cuisine, delery tie
+  Footer
+  Copyright
+  Links
+  Address
+  Contact \*/
+  Two types of Export/Import
 
-```
-Namaste React/
-├── index.html    # Main HTML file with React CDN links
-├── App.js        # React application logic
-├── style.css     # Styling for the application
-└── README.md     # Project documentation
-```
+Default Export/Import
+export default Component; import Component from "path";
 
-## 🚀 How to Run
+Named Export/Import
+export const Component; import {Component} from "path";
 
-1. Clone this repository
-2. Open `index.html` in your browser
-3. The React application will render automatically
+# React Hooks
 
-No build tools or npm installation required!
+(Normal JS utility functions)
 
-## 💡 Key Concepts Covered
+useState() - Superpowerful State Variables in react
+useEffect()
 
-### React.createElement()
-This project uses the core React API to create elements without JSX:
+# 2 types Routing in web apps
 
-```javascript
-React.createElement(type, props, children)
-```
+Client Side Routing
+Server Side Routing
 
-### Virtual DOM
-React creates a JavaScript object representation of the DOM (ReactElement), which is then rendered to the actual browser DOM.
+# Redux Toolkit
 
-## 🔗 React Version
+Install @reduxjs/toolkit and react-redux
+Build our store
+Connect our store to our app
+Slice (cartSlice)
+dispatch(action)
+Selector
 
-- React 18 (Development build via unpkg CDN)
-- ReactDOM 18 (Development build via unpkg CDN)
+# Types of testing (devloper)
 
-## 📖 Learning Resources
+Unit Testing
+Integration Testing
+End to End Testing - e2e testing
 
-This project is part of the **Namaste React** learning series.
+# Setting up Testing in our app
 
-## 👨‍💻 Author
-
-Nitesh Kumar Chauhan
-
----
-
-*Note: This is a learning project focused on understanding React fundamentals without JSX or modern build tools.*
+Install React Testing Library
+Installed jest
+Installed Babel dependencies
+Configure Babel
+Configure Parcel Config file to disable default babel transpilation
+Jest - npx jest --init
+Install jsdom library
+Install @babel/preset-react - to make JSX work in test cases
+Include @babel/preset-react inside my babel config
+npm i -D @testing-library/jest-dom
